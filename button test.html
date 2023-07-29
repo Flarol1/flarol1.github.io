@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <style> body{
+    background-color:aquamarine;
+        opacity: 0.3;
+    }
+</style>
+
+<style> 
+color-button{
+    background-color: tomato;
+
+}
+</style>
+
+
+<head>
+
+
+<link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+    <button class=" button" id="color-button" >Click me!
+      <div id="confettiContainer"></div>
+    </button>
+
+    <ul id="myList">
+
+     <li> Wreckfest </li> 
+      <li> Counter Strike </li>
+      <li> Rocket League   </li>
+      <li> Battlebit </li>
+      <li> League of Legends</li>
+      <li> DOTA 2</li> 
+  
+    </ul>
+   <div id="result"></div>
+      
+
+</body>
+
+
+
+<!-- Picks random background color on button click      -->
+<script>
+const colorButton = document.querySelector("#color-button");
+
+colorButton.addEventListener("click", () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+});
+</script>
+
+<script>
+
+
+colorButton.addEventListener("click", () => {
+  const randomColor = getRandomColor();
+  colorButton.style.backgroundColor = randomColor;
+});
+
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+</script>
+
+<script>
+const selectBtn = document.getElementById("color-button");
+const myList = document.getElementById("myList");
+
+selectBtn.addEventListener("click", function() {
+  const items = myList.getElementsByTagName("li");
+  const randomIndex = Math.floor(Math.random() * items.length);
+  const selectedItem = items[randomIndex].innerHTML;
+  document.getElementById("result").innerHTML = `Have to play this no matter what: ${selectedItem}`;
+
+
+});
+</script>
+<script>
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+</script>
+
+
+
+
+
+
+</html>
