@@ -16,17 +16,16 @@ color-button{
 
 <head>
 
-  <script src="https://www.youtube.com/iframe_api"></script>
 <link rel="stylesheet" href="button.css">
 </head>
 
 <body>
-  
-    <button class=" button" id="color-button" >Click me!
-    
-      <div id="player"></div>
-    </button>
+  <script src="https://www.youtube.com/iframe_api"></script>
 
+    <button class=" button" id="color-button" >Click me!
+
+    </button>
+    <div id="player"></div>
     <ul id="myList">
 
      <li> Wreckfest </li> 
@@ -37,7 +36,7 @@ color-button{
       <li> DOTA 2 </li> 
   
     </ul>
-   <div class = "container" class="textbox-container" id="result"></div>
+   <div class = "container" id="result"></div>
 
 
 
@@ -105,7 +104,7 @@ let player;
 // Function to create the YouTube player
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '660',
+    height: '645',
     width: '840',
     videoId: 'EpHQAw6eCOY', // Replace with the YouTube video ID you want to play
     playerVars: {
