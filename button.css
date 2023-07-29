@@ -9,7 +9,7 @@
   body {
     transition: background-color 0.5s ease;
     height: 100vh;
-    border: 11px solid red;
+ 
  flex:1;
   }
  
@@ -40,7 +40,7 @@
   transform: translate(0, -50%);
     font-size: 5rem; /* set the font size to a large value */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* apply the shadow effect */
-    border: 5px yellow;
+  
   }
 
   #myList {
