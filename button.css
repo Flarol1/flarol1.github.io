@@ -56,8 +56,7 @@
   }
   
   #player {  
-padding-left: 20px;
-padding-top: 20px; 
-position:absolute;
+padding-left: 1em;
+padding-top: 1em; 
 
   }
