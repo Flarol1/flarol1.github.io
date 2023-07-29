@@ -43,15 +43,6 @@
   #myList {
     display: none; 
   }
-
- 
-  body {
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh; /* Set the height as needed */
-  }
   
   .container {
     flex: 1;
