@@ -46,17 +46,10 @@
   
   .container {
     flex: 1;
-  }
-  
-  .textbox-container {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 20px; /* Add some padding for better visibility */
-    background-color: lightgray; /* Just to visualize the container */
   }
   
-  .text-field {
-    width: 200px; /* Set the width as needed */
-  }
+ 
+  
