@@ -22,8 +22,9 @@ color-button{
 <body>
 
   <script src="https://www.youtube.com/iframe_api"></script>
-  <div id="player"></div>
- 
+  <div id="player"   ></div>
+
+
    <button class=" button" id="color-button" >Click me! </button>
 
     
@@ -81,7 +82,7 @@ selectBtn.addEventListener("click", function() {
   const items = myList.getElementsByTagName("li");
   const randomIndex = Math.floor(Math.random() * items.length);
   const selectedItem = items[randomIndex].innerHTML;
-  document.getElementById("result").innerHTML = `Have to play this no matter what: ${selectedItem}`;
+  document.getElementById("result").innerHTML = `Have to play this game no matter what: ${selectedItem}`;
 
 
 });
@@ -107,7 +108,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '645',
     width: '840',
-    videoId: 'EpHQAw6eCOY', // Replace with the YouTube video ID you want to play
+    videoId: 'wTkLLQjgoEU', // Replace with the YouTube video ID you want to play
     playerVars: {
       autoplay: 1, // Change to 1 if you want the video to auto-play
       controls: 1 // Change to 0 if you want to hide the video controls
@@ -117,9 +118,11 @@ function onYouTubeIframeAPIReady() {
 
 // Function to start the video on button click
 document.getElementById('color-button').addEventListener('click', function() {
+  player.style.display = 'block';
   if (player) {
     player.playVideo();
   }
+   
 });
 
 
